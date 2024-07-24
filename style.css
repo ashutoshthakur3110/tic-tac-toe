@@ -1,94 +1,54 @@
-*{
-    padding: 0;
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
+.container {
     text-align: center;
-    font-size: 50px;
 }
 
-#box1{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
-    left: 29rem;
-    top: 8rem;
+h1 {
+    margin-bottom: 20px;
 }
 
-#box2{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
-    left: 34rem;
-    top: 8rem;
-
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-#box3{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    position: absolute;
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: background-color 0.3s;
 }
 
-#box4{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
+.cell:hover {
+    background-color: #f9f9f9;
 }
 
-#box5{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
+#status {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-#box6{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    position: absolute;
-}
-
-
-#box7{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
-}
-
-#box8{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    border-right: none;
-    position: absolute;
-}
-
-#box9{
-    width: 80px;
-    height: 80px;
-    outline: none;
-    border: 1px solid black;
-    position: absolute;
+#restart {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
